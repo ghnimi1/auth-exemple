@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class PostService {
     private final PostRepository postRepository;
     private final UserUtil userUtil;
-
+//post
     public PostService(PostRepository postRepository, UserUtil userUtil) {
         this.postRepository = postRepository;
         this.userUtil = userUtil;
