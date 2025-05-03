@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class PostService {
     private final PostRepository postRepository;
     private final UserUtil userUtil;
-//-------------   -----------post----    --------------------
+//------- ------   -----------post----    --------------------
     public PostService(PostRepository postRepository, UserUtil userUtil) {
         this.postRepository = postRepository;
         this.userUtil = userUtil;
     }
-//----------------   -------create post---------    -----------
+//-------- --------   -------create post---------    -----------
     public Post createPost(PostRequest request) {
         User user = userUtil.getCurrentUser();
         Post post = new Post();
